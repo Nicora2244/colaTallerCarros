@@ -11,4 +11,35 @@ package vista;
  */
 public class NewMain {
     
+    public static void main(String[] args){
+        
+    }
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*Cola<Persona> colaPersona = new Cola<>();
+        
+        colaPersona.encolar(new Persona ("Nicolas", "nicolas.ra@uao", "302"));
+        colaPersona.encolar(new Persona ("Claudia", "claudia.ra@uao", "303"));
+        colaPersona.encolar(new Persona ("Jose", "jose.ra@uao", "304"));
+        colaPersona.encolar(new Persona ("Jimmy", "jimmy.ra@uao", "305"));
+        
+        System.out.println("El contenido de la cola es " + colaPersona.toString());
+        
+        colaPersona.desencolar();
+        
+        System.out.println("El contenido de la cola es " + colaPersona.toString());
+*/
 }
