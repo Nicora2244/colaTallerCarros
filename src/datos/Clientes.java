@@ -83,8 +83,9 @@ public class Clientes {
     }
 
     @Override
-    public Base copy() {
-        return (Base) new Clientes(nombreD, modeloC, tiempoEsperaC);
-    }
+public Base copy() {
+    return (Base) new Clientes(nombreD, modeloC, tiempoEsperaC);
+}
+
     
 }
