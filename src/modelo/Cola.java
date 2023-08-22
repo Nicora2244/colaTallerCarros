@@ -14,8 +14,8 @@ import java.util.Queue;
  * @author nicolas.ramirez_ara
  */
 public class Cola <T extends Base>{
+   
     
-    LinkedList<T> elems;
     private Queue<T> cola;
 
     public Cola() {
@@ -23,21 +23,21 @@ public class Cola <T extends Base>{
     }
     
     public void encolar(T elemento){
-        elems.addLast(elemento);
+        cola.add(elemento);
     }
     
     public T desencolar(){
-        return elems.removeFirst();
+        return cola.remove();
     }
     
     public boolean estaVacia (){
-        return elems.isEmpty();
+        return cola.isEmpty();
     }
     
     @Override
     public String toString(){
         StringBuilder sb = new StringBuilder("(");
-        for(T elemento : elems){
+        for(T elemento : cola){
             sb.append("").append(elemento.toString());
         }
         sb.append(")");

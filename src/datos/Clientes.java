@@ -13,14 +13,14 @@ import modelo.Base;
  */
 public class Clientes {
 
-    public Clientes(String nombreD1, String modeloC1, int tiempoEsperaC1) {
-    }
-
     private String nombreD;
     private String modeloC;
     private int tiempoEsperaC;
 
-    public Clientes() {
+    public Clientes(String nombreD1, String modeloC, int tiempoEsperaC) {
+        this.nombreD = nombreD1;
+        this.modeloC = modeloC1;
+        this.tiempoEsperaC = tiempoEsperaC1;
     }
 
     /**
@@ -84,7 +84,7 @@ public class Clientes {
 
     public Base copy() {
      
-        return new Clientes(nombreD, modeloC, tiempoEsperaC);
+        return new Clientes(nombreD1, modeloC1, tiempoEsperaC1);
         
         
     }
