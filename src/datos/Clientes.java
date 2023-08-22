@@ -5,15 +5,23 @@
  */
 package datos;
 
+import modelo.Base;
+
 /**
  *
  * @author nicolas.ramirez_ara
  */
 public class Clientes {
 
+    public Clientes(String nombreD1, String modeloC1, int tiempoEsperaC1) {
+    }
+
     private String nombreD;
     private String modeloC;
     private int tiempoEsperaC;
+
+    public Clientes() {
+    }
 
     /**
      * Get the value of tiempoEsperaC
@@ -69,4 +77,16 @@ public class Clientes {
         this.nombreD = nombreD;
     }
 
+    @Override
+    public String toString() {
+        return nombreD + ", " + modeloC + ", " + tiempoEsperaC;
+    }
+
+    public Base copy() {
+     
+        return new Clientes(nombreD, modeloC, tiempoEsperaC);
+        
+        
+    }
+    
 }

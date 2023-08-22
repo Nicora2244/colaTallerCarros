@@ -5,7 +5,9 @@
  */
 package modelo;
 
+import datos.Clientes;
 import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  *
@@ -16,7 +18,7 @@ public class Cola <T extends Base>{
     LinkedList<T> elems;
 
     public Cola() {
-        elems = new LinkedList<>();
+        private Queue<Clientes> cola = new LinkedList<>();
     }
     
     public void encolar(T elemento){
