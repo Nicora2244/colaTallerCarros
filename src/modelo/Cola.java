@@ -16,9 +16,10 @@ import java.util.Queue;
 public class Cola <T extends Base>{
     
     LinkedList<T> elems;
+    private Queue<T> cola;
 
     public Cola() {
-        private Queue<Clientes> cola = new LinkedList<>();
+        cola = new LinkedList<>();
     }
     
     public void encolar(T elemento){
