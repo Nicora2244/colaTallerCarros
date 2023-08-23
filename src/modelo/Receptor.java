@@ -38,6 +38,54 @@ public class Receptor {
         this.carroActual = null;
     }
 
+    public int getId() {
+        return id;
+    }
+    
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public boolean isOcupado() {
+        return ocupado;
+    }
+    
+    public void setOcupado(boolean ocupado) {
+        this.ocupado = ocupado;
+    }
+
+    public int getTiempoAtencion() {
+        return tiempoAtencion;
+    }
+    
+    public void setTiempoAtencion(int tiempoAtencion) {
+        this.tiempoAtencion = tiempoAtencion;
+    }
+
+    public int getCantidadCarrosAtendidos() {
+        return cantidadCarrosAtendidos;
+    }
+    
+    public void setCantidadCarrosAtendidos(int cantidadCarrosAtendidos) {
+        this.cantidadCarrosAtendidos = cantidadCarrosAtendidos;
+    }
+
+    public Clientes getCarroActual() {
+        return carroActual;
+    }
+
+    public void setCarroActual(Clientes carroActual) {
+        this.carroActual = carroActual;
+    }
+
+    
+
+    
+
+    
+
+    
+
     
     
     
