@@ -82,10 +82,10 @@ public class Clientes {
         return nombreD + ", " + modeloC + ", " + tiempoEsperaC;
     }
 
+    /*
     @Override
-public Base copy() {
-    return (Base) new Clientes(nombreD, modeloC, tiempoEsperaC);
-}
-
-    
+    public Base copy() {
+        return (Base) new Clientes(nombreD, modeloC, tiempoEsperaC);
+    }
+    */
 }
