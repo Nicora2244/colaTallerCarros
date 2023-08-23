@@ -14,33 +14,30 @@ import java.util.Random;
  *
  * @author nicolas.ramirez_ara
  */
-public class Cola <T extends Base>{
-   
-    
+public class Cola<T extends Base> {
+
+    private static final String[] modelos = {"RX31", "GT", "MK21", "R3"};
+    private static final String[] nombres = {"Julian", "Carla", "Luis", "Juan"};
+    private static final Random random = new Random();
+
     private Queue<T> cola;
 
     public Cola() {
         cola = new LinkedList<>();
     }
-    
-    public void encolar(T elemento){
+
+    public void encolar(T elemento) {
         cola.add(elemento);
     }
-    
-    public T desencolar(){
+
+    public T desencolar() {
         return cola.remove();
     }
-    
-    public boolean estaVacia (){
+
+    public boolean estaVacia() {
         return cola.isEmpty();
     }
-    
-    public class generadorCarros{
-        private static final String[] modelos = {"RX31","GT","MK21","R3"};
-        private static final String[] nombres = {"Julian","Carla","Luis","Juan"};
-        private static final Random random = new Random();
-    }
-    
+
     public static Clientes generarCarroAleatorio() {
         String modeloAleatorio = modelos[random.nextInt(modelos.length)];
         String nombreAleatorio = nombres[random.nextInt(nombres.length)];
@@ -48,16 +45,15 @@ public class Cola <T extends Base>{
 
         return new Clientes(nombreAleatorio, modeloAleatorio, tiempoEsperaAleatorio);
     }
-    
+
     @Override
-    public String toString(){
+    public String toString() {
         StringBuilder sb = new StringBuilder("(");
-        for(T elemento : cola){
+        for (T elemento : cola) {
             sb.append("").append(elemento.toString());
         }
         sb.append(")");
         return sb.toString();
     }
-    
-}
 
+}
