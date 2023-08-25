@@ -17,10 +17,13 @@ public class Clientes {
     private String modeloC;
     private int tiempoEsperaC;
 
-    public Clientes(String nombreD1, String modeloC1, int tiempoEsperaC1) {
-        this.nombreD = nombreD1;
-        this.modeloC = modeloC1;
-        this.tiempoEsperaC = tiempoEsperaC1;
+    public Clientes() {
+    }
+
+    public Clientes(String nombreD, String modeloC, int tiempoEsperaC) {
+        this.nombreD = nombreD;
+        this.modeloC = modeloC;
+        this.tiempoEsperaC = tiempoEsperaC;
     }
 
     /**
@@ -82,10 +85,8 @@ public class Clientes {
         return nombreD + ", " + modeloC + ", " + tiempoEsperaC;
     }
 
-    /*
-    @Override
     public Base copy() {
-        return (Base) new Clientes(nombreD, modeloC, tiempoEsperaC);
+        return new Clientes(nombreD, modeloC, tiempoEsperaC);
     }
-    */
+    
 }

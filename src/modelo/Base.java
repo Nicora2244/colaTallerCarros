@@ -10,6 +10,6 @@ package modelo;
  * @author nicolas.ramirez_ara
  */
 public abstract class Base {
-
     public abstract Base copy();
 }
+
