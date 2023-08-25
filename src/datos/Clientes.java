@@ -11,7 +11,7 @@ import modelo.Base;
  *
  * @author nicolas.ramirez_ara
  */
-public class Clientes {
+public class Clientes extends Base {
 
     private String nombreD;
     private String modeloC;
