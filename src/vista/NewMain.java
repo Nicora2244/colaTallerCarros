@@ -11,8 +11,12 @@ import modelo.Receptor;
 
 /**
  *
- * @author nicolas.ramirez_ara
+ * @author Nicolas Ramirez A - Codigo 2195824
+ * @author Daniel Santana    - Codigo 2160550
+ * @author Luu               - Codigo 2195824
+ * @author Nelson Duque      - Codigo 2160550
  */
+
 public class NewMain {
 
     public static void main(String[] args) {
