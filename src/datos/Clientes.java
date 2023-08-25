@@ -19,10 +19,26 @@ public class Clientes extends Base {
     private String nombreD;
     private String modeloC;
     private int tiempoEsperaC;
-
+ 
+   /*
+     * Constructor vacío que inicializa un nuevo objeto Clientes.
+     * @return null.
+     */
+    
     public Clientes() {
     }
-
+    
+    /*
+     * Constructor que inicializa un nuevo objeto Clientes con los valores proporcionados.
+     * 
+     * Detalles adicionales si es necesario.
+     * Puede abarcar múltiples líneas.
+     * 
+     * @param parametro1 nombreD.
+     * @param parametro2 modeloC.
+     * @param parametro2 tiempoEsperaC.
+     */
+      
     public Clientes(String nombreD, String modeloC, int tiempoEsperaC) {
         this.nombreD = nombreD;
         this.modeloC = modeloC;
@@ -82,11 +98,22 @@ public class Clientes extends Base {
     public void setNombreD(String nombreD) {
         this.nombreD = nombreD;
     }
+    
+    /*
+     * Devuelve una representación en cadena del objeto Clientes
+     * @return Cadena del objeto
+     * @throws ExcepcionTipo Descripción de cuándo se lanza esta excepción.
+     */
 
     @Override
     public String toString() {
         return nombreD + ", " + modeloC + ", " + tiempoEsperaC;
     }
+    
+    /*
+     * Crea y devuelve una copia del objeto Clientes.
+     * @return Clientes nueva instancia de un objeto.
+     */
 
     public Base copy() {
         return new Clientes(nombreD, modeloC, tiempoEsperaC);
