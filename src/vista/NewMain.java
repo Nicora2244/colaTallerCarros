@@ -7,7 +7,7 @@ package vista;
 
 import datos.Clientes;
 import modelo.Cola;
-import modelo.Receptor;
+import datos.Receptor;
 
 /**
  *
