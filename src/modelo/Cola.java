@@ -24,22 +24,22 @@ public class Cola<T extends Base> {
     private static final String[] nombres = {"Julian", "Carla", "Luis", "Juan"};
     private static final Random random = new Random();
 
-    private Queue<T> cola;
+    private Queue<T> colaClientes;
 
     public Cola() {
-        cola = new LinkedList<>();
+        colaClientes = new LinkedList<>();
     }
 
     public void encolar(T elemento) {
-        cola.add(elemento);
+        colaClientes.add(elemento);
     }
 
     public T desencolar() {
-        return cola.remove();
+        return colaClientes.remove();
     }
 
     public boolean estaVacia() {
-        return cola.isEmpty();
+        return colaClientes.isEmpty();
     }
 
     public static Clientes generarCarroAleatorio() {
@@ -53,7 +53,7 @@ public class Cola<T extends Base> {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder("(");
-        for (T elemento : cola) {
+        for (T elemento : colaClientes) {
             sb.append("").append(elemento.toString());
         }
         sb.append(")");

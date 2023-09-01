@@ -5,8 +5,6 @@
  */
 package datos;
 
-import datos.Clientes;
-
 /**
  *
  * @author nicolas.ramirez_ara@uao.edu.co - Nicolas Ramirez        - Codigo 2195824
